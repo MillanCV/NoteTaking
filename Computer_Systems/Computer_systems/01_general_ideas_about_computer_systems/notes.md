@@ -56,3 +56,79 @@ The assembler translates the .a text file into machine-language instructions and
 ## What happens in the linking phase?
 
 The linker merge the hello.o with other separated object files required into the executable object file ready to be loaded into memory and executed by the system.
+
+## What is a shell?
+
+It's a command-line interpreter that prints prompts and waits for the user to introduce commands to execute them. If the command is not one of the built in commands the shell asumes that it is a executable file to be loaded and to be run.
+
+## Why programmers need to understand compilation systems?
+
+To optimize programs, avoid security problems and understand linking problems.
+
+## What is a word?
+
+It is a chunck of bytes. Normally 4 bytes or 8 bytes.
+
+## What is a bus?
+
+An electrical conduit that carry bytes between components.
+
+## What is an I/O device?
+
+They are devices to connect to the external world.
+
+## How I/O devices are connected to the computer?
+
+They are connected to the I/O bus, by a controller or by an adapter. Both transfer information betwwn the I/O bus and the I/O device.
+
+## What is the main memory?
+
+The RAM, is a temporary storage that holds programs and data that the processor manipulates during the exection of a program.
+
+## How is organized the main memory?
+
+As a linear array of bytes, each one with an address.
+
+## What is the CPU?
+
+Is the central processing unit or processor.
+
+## What does the CPU? 
+
+Interprets instructions stored in main memory.
+
+## What is the Program Counter?
+
+Is a word-size register that points at some machine-language instruction in main memory.
+
+## What does de CPU?
+
+Execute repeatdly the instruction pointed by the PC. Read the counter, interpretates the bits in the instruction, perfom a simple operation, updates the pc to point to the next instruction.
+
+## What is the ALU?
+
+The arithmetic/logic unit in the CPU that computes new data and addreses.
+
+## What is the register file?
+
+A storage device word size in the CPU.
+
+## What tipical operations does the CPU?
+
+Load, store, operate, jump.
+
+## What is a load operation?
+
+Copy a byte or word from main memory into a register overwriting.
+
+## What is a store operation?
+
+Copy a byte or word from a register to a location in main memory overwriting
+
+## What is an operate operation?
+
+Copy the content of two registers to the ALU, perform an arithmetic operation and store the result in a register.
+
+## What is a jump operation?
+
+Extract a word from the instruction a copy the word in the program counter.
