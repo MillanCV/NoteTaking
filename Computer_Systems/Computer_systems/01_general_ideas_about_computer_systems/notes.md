@@ -132,3 +132,43 @@ Copy the content of two registers to the ALU, perform an arithmetic operation an
 ## What is a jump operation?
 
 Extract a word from the instruction a copy the word in the program counter.
+
+## Describe what happens when you enter a command in a shell and enter is pressed
+
+* The shell reads each character into a register and then stores it in memory
+* After hitting enter the shell loads the executable hello copying code and data from hello executable object file from disk to main memory.
+	* This data movement goes directly from disk to memory thanks to DMA, direct memory access.
+* While loaded in memory, processor starts to execute the instructions in the main routine of program hello.
+	* Instructions in program copy the bites of "hello, world\n" from memory to register file, and from there to display device.
+
+## Is moving information a costly operation?
+
+Yes, system designers should made these operations run as fast as possible.
+
+## Compare storage devices
+
+Larger storage are slower than smallers. Slower are cheaper.
+
+## Compare processor evolution vs memory evolution
+
+Is easier and cheaper to make processor run faster, which brings the processor-memory gap.
+
+## How to deal with processor-memory gap
+
+With cache memories that serves as temporary stagins areas that processor will need in near future.
+
+## What is locality when running a program?
+
+Is the tendency to access data and code in localized regions.
+
+## How caches exploits locality to increase performance?
+
+Setting up caches to hold data that i likely to be accesed often. This drives to perfom most meory operations using fast caches.
+
+## How are storages organized in a system?
+
+They form a memory hierarchy with a piramid shape. On top the fastest, smallest and more costly per bit. On the bottom the larger, larger and less costly. From the registers, caches L1, L2, L3, main memory, locals disks and remote disks.
+
+## What is the main idea of the memory hierachy?
+
+Each level serves as a cache for the next lower level.
